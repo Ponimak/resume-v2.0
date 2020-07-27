@@ -1,0 +1,117 @@
+.homeButton { /*Top button*/
+  background-color: white; /* Green */
+  border: 2px solid black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:100%;
+  position: fixed;
+  top: 0px;
+  right:0px;
+  left:0px;
+}
+.head { /*name and contacts*/
+  border: 1px solid black;
+  width: 100%;
+  text-align: left;
+  font-family: arial;
+  margin-top: 50px;
+}
+.chapter { /*chapter*/
+  border: 1px solid black;
+  width: 100%;
+  padding: 20px;
+  color: gray;
+  font-family: arial;
+}
+
+.career { /*career info*/
+  border: 1px solid black;
+  width: 100%;
+  text-align: left;
+  font-family: arial;
+}
+
+.eduList { /*education info*/
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  font-family: arial;
+}
+.eduCol1 { /*education column 1*/
+  border-right: 1px solid black;
+  width: 30%;
+}
+.eduCol2 { /*education column 2*/
+  width: 70%;
+  padding: 10px;
+  text-align: left;
+}
+
+.langList { /*known languages list*/
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  font-family: arial;
+}
+.langCol1 { /*languages column 1*/
+  border-right: 1px solid black;
+  width: 30%;
+}
+.langCol2 { /*languages column 2*/
+  width: 70%;
+  padding: 10px;
+  text-align: left;
+}
+
+.progLangList { /*known programming languages list*/
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  font-family: arial;
+}
+.progLangCol1 { /*prog languages column 1*/
+  border-right: 1px solid black;
+  width: 30%;
+}
+.progLangCol2 { /*prog languages column 2*/
+  width: 70%;
+  padding: 10px;
+  text-align: left;
+}
+
+.succList { /*successes list*/
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  font-family: arial;
+}
+.succCol1 { /*successes column 1*/
+  border-right: 1px solid black;
+  width: 30%;
+}
+.succCol2 { /*successes column 2*/
+  width: 70%;
+  padding: 10px;
+  text-align: left;
+}
+
+.qualList { /*qualities list*/
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  font-family: arial;
+}
+.qualCol1 { /*qualities column 1*/
+  border-right: 1px solid black;
+  width: 30%;
+}
+.qualCol2 { /*qualities column 2*/
+  width: 70%;
+  padding: 10px;
+  text-align: left;
+}
