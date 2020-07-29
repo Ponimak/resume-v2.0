@@ -3,35 +3,97 @@
 <head>
   <title>Example css page</title>
   <meta charset="utf-8" />
+  <meta lang="ru-RU" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <style>
   .nav {
     list-style-type: none;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
   }
   .nav li {
-    float:left;
-    background-color: #444444;
+    float: left;
   }
   .nav a {
+    display: block;
+    color: white;
     text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    color: #eeeeee;
-    padding: 17px 16px;
+    padding: 20px 21px;
   }
   .nav a:hover {
-    background-color: #111111;
+    color: lightgray;
+  }
+  .nav a:active {
+    color: gray;
+  }
+
+  aside {
+    overflow-y: scroll;
+    display: inline-block;
+    margin-right: 0;
+    width: 20%;
+  }
+
+  .chronicles {
+    display: inline-block;
+    width: 75%;
+
+  }
+  .chronicles h2 {
+    text-align: center;
+    background-color: #eee;
+    padding: 25px;
+    margin-bottom: 0;
+  }
+
+  .chronEntry {
+    background-color: #eee;
+    margin-top: 0;
   }
 </style>
 </head>
 
 <body>
   <ul class="nav">
-    <li><a href="ссыль">Где я?</a></li>
+    <li><a href="https://github.com/Ponimak">Гитхаб</a></li>
     <li><a>Обо мне</a></li>
     <li><a href="resume/1sttable.htm">Резюме</a></li>
     <li><a>Не нажимать!</a></li>
   </ul>
+
+  <aside>
+    <ul class="sidebar">
+      <li><a href="#29.07.2020">29.07.2020</a></li><!-- здесь нужна закладка на запись -->
+      <li>Дата записи</li>
+      <li>Дата записи</li>
+      <li>Дата записи</li>
+      <li>Дата записи</li>
+      <li>Дата записи</li>
+      <li>Дата записи</li>
+      <li>Дата записи</li>
+      <li>Дата записи</li>
+
+    </ul>
+  </aside>
+
+  <div class="chronicles">
+    <div>
+      <h2>Дневник, про который кто-то постоянно забывает</h2>
+    </div>
+
+    <div class="chronEntry"> <h4 id="29.07.2020">29.07.2020</h4>
+      <p>Дата этой записи указывает день, когда была
+      готова первая версия этого несчастного сайта.
+      Она кривая, недоделанная, выглядит ужасно. Надеюсь,
+      что когда вы это читаете, страница не вызывает желания
+      вырвать у себя глаза а у меня руки. Мне они еще пригодятся)</p>
+    </div>
+
+
+  </div>
+
 
 
 
