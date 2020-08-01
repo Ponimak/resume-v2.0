@@ -3,15 +3,19 @@
 <head>
   <title>Example css page</title>
   <meta charset="utf-8" />
-  <meta lang="ru-RU" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <style>
+  body {
+    margin:0;
+  }
   .nav {
     list-style-type: none;
     background-color: black;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: sticky;
+    top: 0;
   }
   .nav li {
     float: left;
@@ -28,61 +32,105 @@
   .nav a:active {
     color: gray;
   }
-
+  .currPage {
+    background-color: #eee;
+  }
+  .currPage a{
+    color: black;
+  }
   aside {
     overflow-y: scroll;
     display: inline-block;
     margin-right: 0;
-    width: 20%;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    background-color: lightgray;
+    min-height: 50%;
   }
-
+  aside p {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  section {
+    background-color: #eee;
+    position: absolute;
+    right: 200px;
+    width: auto;
+    margin: auto;
+    display: inline;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+  }
   .chronicles {
     display: inline-block;
-    width: 75%;
-
   }
   .chronicles h2 {
     text-align: center;
-    background-color: #eee;
-    padding: 25px;
-    margin-bottom: 0;
+    padding: 10px;
   }
 
   .chronEntry {
-    background-color: #eee;
     margin-top: 0;
+    border-bottom: 2px solid #ccc;
+  }
+  .chronEntry p::first-letter {
+    padding-left: 20px;
+  }
+  .chronEntry h4 {
+    padding-left: 40px;
   }
 </style>
 </head>
 
 <body>
   <ul class="nav">
-    <li><a href="https://github.com/Ponimak">Гитхаб</a></li>
-    <li><a>Обо мне</a></li>
+    <li class="currPage"><a>Дневник</a></li>
+    <li><a href="info/infopage.htm">Обо мне</a></li>
     <li><a href="resume/1sttable.htm">Резюме</a></li>
-    <li><a>Не нажимать!</a></li>
+    <li style="float:right"><a href="https://github.com/Ponimak">Гитхаб</a></li>
+    <li style="float:right"><a>Не нажимать!</a></li>
   </ul>
 
   <aside>
+    <p>Закладки</p>
     <ul class="sidebar">
+      <li><a href="#02.08.2020">02.08.2020</a></li>
+      <li><a href="#30.07.2020">30.07.2020</a></li>
       <li><a href="#29.07.2020">29.07.2020</a></li><!-- здесь нужна закладка на запись -->
-      <li>Дата записи</li>
-      <li>Дата записи</li>
-      <li>Дата записи</li>
-      <li>Дата записи</li>
-      <li>Дата записи</li>
-      <li>Дата записи</li>
-      <li>Дата записи</li>
-      <li>Дата записи</li>
-
     </ul>
   </aside>
 
+<section>
   <div class="chronicles">
     <div>
       <h2>Дневник, про который кто-то постоянно забывает</h2>
     </div>
-
+    <div class="chronEntry"><h4 id="02.08.2020">02.08.2020</h4>
+      <p>Сегодня добавилась еще одна страница, на ней можно прочитать
+        менее серьезную информацию про меня, чем в резюме
+        (там вообще досье какое-то жуткое). Получилось правда странновато,
+        половина текста про мои музыкальные предпочтения, но я последние лет 5
+        ничего другого в жизни и не видел (слышал), так что иначе и быть не могло.
+        Немного улучшен дизайн кнопок навигации, они теперь сливаются со страницей,
+        соответсвующей им. Мне так больше нравится, да и понятно где находишься,
+        заблудиться сложнее.</p>
+    </div>
+    <div class="chronEntry"> <h4 id="30.07.2020">30.07.2020</h4>
+      <p>Ой не знаю. Весь этот код очень странно работает, и непонятно,
+      какой браузер как его интерпретирует. Из способов проверить есть
+      только хром, да еще расширение для атома. Постоянно какие-то
+      баги, что-то не так работает, что-то ведет себя очень странно.
+      Но! как можно видеть из текущей версии страницы, кое-что у
+      меня все же получилось. Внешний вид все еще не очень приятный,
+      но это временно, чтобы разметку проще было ставить.
+      Не уверен, как долго еще буду придерживаться такой версии
+      сайта (наполнения контентом), эта писанина кажется
+      мне глуповатой, просто повеселить себя.</p> <p>Цитата дня:
+      "Чтоы понять, что ты любишь яблочный сок, надо попробовать
+      много других напитков и понять, что ты любишь пиво". А на сегодня
+      все.</p>
+    </div>
     <div class="chronEntry"> <h4 id="29.07.2020">29.07.2020</h4>
       <p>Дата этой записи указывает день, когда была
       готова первая версия этого несчастного сайта.
@@ -90,18 +138,7 @@
       что когда вы это читаете, страница не вызывает желания
       вырвать у себя глаза а у меня руки. Мне они еще пригодятся)</p>
     </div>
-
-
   </div>
-
-
-
-
-
-
-
-
-
-
+</section>
 </body>
 </html>

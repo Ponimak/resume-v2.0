@@ -1,0 +1,30 @@
+.nav {
+  list-style-type: none;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+.nav li {
+  float: left;
+}
+.nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 20px 21px;
+}
+.nav a:hover {
+  color: lightgray;
+}
+.nav a:active {
+  color: gray;
+}
+.currPage {
+  background-color: #eee;
+}
+.currPage a{
+  color: black;
+}
